@@ -20,6 +20,7 @@
             border-radius: 10px;
             padding: 30px;
             box-sizing: border-box;
+            background-color: white;
         }
 
         body{
@@ -28,11 +29,51 @@
             align-items: center;
 
             height: 100vh;
+
+            background-image: url('https://images.hdqwalls.com/wallpapers/simple-minimal-mountains-landscape-4k-rc.jpg');
+            background-size: cover;
         }
 
         .form-title{
             text-align: center;
             font-family: Roboto;
+        }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid crimson;
+            background-color: #ffafbf;
+            outline: none;
+        }
+
+        .submit-btn{
+            background-color: crimson;
+            color: white;
+            padding: 5px;
+            border: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover{
+            background-color: black;
+        }
+
+        .link{
+            text-decoration: none;
+            color: crimson;
+            font-weight: bold;
+        }
+
+        .link:hover{
+            text-decoration: underline;
+            color: blue;
         }
 
     </style>
@@ -52,8 +93,10 @@
 
             <label>Password</label>
             <input type="password" class="text-input">
+
+            <a href="#" class="link">Forgot Password?</a>
             
-            <button class="Submit-btn"></button>
+            <button class="submit-btn">Submit</button>
 
         </form>
 
