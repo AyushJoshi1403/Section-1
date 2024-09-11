@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grids</title>
+
+    <style>
+        .child {
+            border: 2px solid red;
+            padding: 30px;
+        }
+
+        .child h1 {
+            text-align: center;
+        }
+
+        .parent{
+            display: grid;
+            /* grid-template-columns: 300px 500px 800px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="child">
+            <h1>1</h1>
+        </div>
+
+        <div class="child">
+            <h1>2</h1>
+        </div>
+
+        <div class="child">
+            <h1>3</h1>
+        </div>
+
+        <div class="child">
+            <h1>4</h1>
+        </div>
+        <div class="child">
+            <h1>5</h1>
+        </div>
+
+        <div class="child">
+            <h1>6</h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
