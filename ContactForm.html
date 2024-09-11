@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Page</title>
+
+
+    <style>
+
+        *{
+            font-family: Roboto;
+        }
+
+        .card{
+            border: 1px solid red;
+            width: 30%;
+            box-shadow: 3px 3px 5px 2px #00000080;
+            border-radius: 5px;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: rgb(240, 225, 225);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+
+            background-image: url('https://images.unsplash.com/photo-1553702446-a39d6fbee6cb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+        }
+
+        .form-title{
+            font-size: x-large;
+            text-align: center;
+            font-family: Roboto;
+        }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+            /* background-color: #ffafbf; */
+            outline: none;
+        }
+
+        .submit-btn{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h3 class="form-title">Contact Us</h3>
+
+        <form>
+            
+            <label>Name*</label>
+            <input type="text" class="text-input" placeholder="Enter full name" required>
+
+            <label>Email Address*</label>
+            <input type="email" class="text-input" placeholder="example@gmail.com" required>
+
+            <label>Phone Number*</label>
+            <input type="number" class="text-input" placeholder="+91 ##########" required>
+
+            <label>Message*</label>
+            <textarea rows="5" cols="25" class="text-input" placeholder="Enter your message here..." required></textarea>
+
+            <button class="submit-btn">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
