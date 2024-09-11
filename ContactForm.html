@@ -52,6 +52,19 @@
             outline: none;
         }
 
+        .name{
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+
+        }
+
         .submit-btn{
             background-color: black;
             color: white;
@@ -78,8 +91,11 @@
 
         <form>
             
-            <label>Name*</label>
-            <input type="text" class="text-input" placeholder="Enter full name" required>
+            <label>Full Name*</label>
+            <div class="name">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+            </div>
 
             <label>Email Address*</label>
             <input type="email" class="text-input" placeholder="example@gmail.com" required>
