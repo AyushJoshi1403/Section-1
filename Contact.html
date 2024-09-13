@@ -6,26 +6,66 @@
     <title>Contact Form</title>
 
     <style>
+
+        body{
+            background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2pvYjE0NDgtYmFja2dyb3VuZC0wNGEteF8xLmpwZw.jpg');
+            background-size: cover;
+        }
+
         .card{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: flex;
-            width: 80%;
+            width: 70%;
             margin: auto;
-            margin-top: 10%;
-            height: 80vh;
+            margin-top: 11%;
+            height: 70vh;
         }
 
         .form-img{
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             width: 100%;
+            padding: 70px;
+            box-sizing: border-box;
             background-image: url('https://images.pexels.com/photos/33999/pexels-photo.jpg?cs=srgb&dl=pexels-negativespace-33999.jpg&fm=jpg');
             background-size: cover;
         }
 
         .form-content{
-            border: 2px solid green;
+            /* border: 2px solid green; */
+            background-color: rgb(246, 242, 242);
+            padding: 70px;
+            box-sizing: border-box;
+            /* align-content: center; */
             width: 100%;
         }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            /* border-bottom: 2px solid crimson; */
+            /* background-color: #ffafbf; */
+            outline: none;
+        }
+
+        .submit-btn{
+            background-color: rgb(255, 166, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover{
+            background-color: black;
+        }
+
     </style>
 
 </head>
@@ -34,11 +74,19 @@
     <div class="card">
 
         <div class="form-img">
-            <h1>Background Image</h1>
+            <!-- <h1>Background Image</h1> -->
         </div>
 
         <div class="form-content">
-            <h1>Contact Form</h1>
+            <h1 style="text-align: center; margin-top: 5px; margin-bottom: 50px;">CONTACT US</h1>
+            <div>
+                <input type="text" class="text-input" placeholder="Enter your Name">
+                <input type="text" class="text-input" placeholder="Enter a valid Email Address">
+                <textarea rows="5" cols="25" class="text-input" placeholder="Enter your message here..."></textarea>
+            </div>
+            <div>
+                <button class="submit-btn">SUBMIT</button>
+            </div>
         </div>
 
     </div>
