@@ -14,21 +14,26 @@
 
         <article>
 
-            <section class="border-2 border-red-500 bg-gradient-to-r from-purple-400 to-indigo-800 h-screen">
+            <section class="bg-gradient-to-r from-purple-400 to-indigo-800 min-h-screen lg:max-h-[50%]">
 
-                <div class="border border-blue-500 text-white w-[35%] mx-auto py-48 space-y-12 h-[60%]">
+                <div class="text-white w-[40%] mx-auto py-48 space-y-12 h-[60%]">
                     <h1 class="text-7xl font-bold text-center">Discover a home for everyone</h1>
 
-                    <div class="flex gap-8 justify-center text-gray-400">
-                        <select required class="w-[30%] p-1 rounded">
-                            <option value="">Options</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
-                        <button class="w-[60%] p-1 border bg-white rounded">Search for layout
-                            <i class="fa-solid fa-magnifying-glass "></i>
-                        </button>
+                    <div class="grid grid-cols-12 gap-2 text-center">
+                        <div class="col-span-12 lg:col-span-4 text-gray-400">
+                            <select required class="w-[95%] p-1 border bg-white rounded">
+                                <option value="">Options</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 lg:col-span-8 text-gray-400">
+                            <button class="w-[95%] p-1 border bg-white rounded">Search for layout
+                                <i class="fa-solid fa-magnifying-glass "></i>
+                            </button>
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -37,24 +42,79 @@
 
             <section class="w-[90%] mx-auto">
 
-                <h1 class="text-left font-bold text-5xl">Featured Properties</h1>
-                <h1 class="text-1xl text-gray-500">Explore our layout and effects</h1>
+                <h1 class="text-left font-bold text-5xl mt-14 mb-2">Featured Properties</h1>
+                <h1 class="text-1xl text-gray-500 mb-10">Explore our layout and effects</h1>
 
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid lg:grid-cols-4 gap-6">
 
-                    <div class="border border-indigo-300">
-                        <img src="https://content.jdmagicbox.com/v2/comp/chennai/x8/044pxx44.xx44.110103174112.x8x8/catalogue/royal-designers-tambaram-east-chennai-builders-qkvqovsgiy.jpg" alt="">
+                    <div class="border border-transparent rounded-lg">
+                        <img src="https://i.pinimg.com/474x/6d/d7/01/6dd7010eaa7b04c24676c4281cfa284a.jpg" alt="" class="shadow-lg rounded-lg">
                     </div>
-                    <div class="border border-indigo-300">
-                        <img src="https://i.pinimg.com/474x/f7/31/46/f73146805374353418ca847b5ee8e535.jpg" alt="">
+                    <div class="border border-transparent rounded-lg">
+                        <img src="https://i.pinimg.com/474x/f7/31/46/f73146805374353418ca847b5ee8e535.jpg" alt="" class="shadow-lg rounded-lg">
                     </div>
-                    <div class="border border-indigo-300">
-                        <h1>yo</h1>
-                        <img src="https://i.pinimg.com/474x/19/cc/a6/19cca6b789c6967bc1357187b46bb60e.jpg" alt="">
+                    <div class="border border-transparent rounded-lg">
+                        <img src="https://i.pinimg.com/474x/19/cc/a6/19cca6b789c6967bc1357187b46bb60e.jpg" alt="" class="shadow-lg rounded-lg">
+                        <!-- <h1 class="text-2xl font-bold">Gorgeous Home</h1> -->
+                        <!-- <h1 class="text-4xl font-bold">$2,099</h1> -->
                     </div>
-                    <div class="border border-indigo-300">
-                        <h1>yo</h1>
-                        <img src="https://i.pinimg.com/564x/d6/44/87/d64487145fe58ec916aa9998eb80fbcb.jpg" alt="">
+                    <div class="border border-transparent rounded-lg">
+                        <img src="https://i.pinimg.com/474x/b6/b1/32/b6b132dff058c1332b9c4ddd67230ae9.jpg" alt="" class="shadow-lg rounded-lg">
+                    </div>
+
+                    <button class="w-[30%] p-1 border bg-grey rounded-lg mt-5 mb-14">Review all
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section class="border border-red-500 bg-gradient-to-r from-purple-400 to-indigo-800 min-h-screen lg:max-h-[50%]">
+
+                <div class="w-[80%] mx-auto">
+
+                    <h1 class="text-white text-center font-bold text-5xl mt-14 mb-4">Best Services</h1>
+                    <h1 class="text-white text-center mb-12">Lorem ipsum dolor sit amet consectetur.</h1>
+
+                    <div class="grid lg:grid-cols-3 gap-10">
+
+                        <div class="shadow-lg rounded-lg bg-white border border-indigo-300 p-10">
+                            <img src="Building1.png" alt="">
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-3xl font-bold">Search Property</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eaque?</p>
+                                <button class="w-[30%] p-1 border bg-grey rounded-lg">Explore
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-lg bg-white border border-indigo-300 p-10">
+                            <img src="Coworkers1.png" alt="">
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-3xl font-bold">Professional Agents</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eaque?</p>
+                                <button class="w-[30%] p-1 border bg-grey rounded-lg">Explore
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="shadow-lg rounded-lg bg-white border border-indigo-300 p-10">
+                            <img src="Savings1.png" alt="">
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-3xl font-bold">Buy & Sell Property</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eaque?</p>
+                                <button class="w-[30%] p-1 border bg-grey rounded-lg">Explore
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
