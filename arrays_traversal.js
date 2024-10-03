@@ -97,3 +97,22 @@ const firstNames = fullnames.map( (p) => {return p.split(' ')[0] } );
 console.log(firstNames);
 
 console.log('-----')
+
+// filter
+const budgetPrices = prices2.filter( (p) => {return p<1000 } );
+console.log(budgetPrices);
+
+console.log('-----')
+
+const nums2 = [3, 7, 9, 2, 1, 6, 8];
+// filter all odd numbers
+const oddNums = nums2.filter( (p) => {return ( p % 2 !== 0) });
+console.log(oddNums);
+
+console.log('-----')
+
+const friendNames = ['raju', 'ramu', 'pinki', 'kaliya', 'chutki'];
+const namesFour = friendNames.filter( (p) => {return (p.length > 4)});
+console.log(namesFour);
+
+console.log('-----')
