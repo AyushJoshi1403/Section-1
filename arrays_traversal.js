@@ -85,18 +85,15 @@ console.log('-----')
 // add 18% GST to all prices
 
 const prices2 =[2400,340,890,430,12000,340];
+
 const gstPrices = prices2.map( (p) => {return (p + p*0.18) } )
 console.log(gstPrices);
 
 console.log('-----');
 
-const fullnames = [ 'Ayush Joshi', 'Ankit Singh', 'Shreyansh Saxena', 'Hamid Khan']
+const fullnames = [ 'Ayush Joshi', 'Ankit Singh', 'Shreyansh Saxena', 'Hamid Khan' ];
 
+const firstNames = fullnames.map( (p) => {return p.split(' ')[0] } );
+console.log(firstNames);
 
-
-
-
-
-
-
-
+console.log('-----')
