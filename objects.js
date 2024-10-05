@@ -87,17 +87,20 @@ console.log(smartphoneArray[1].price);
 console.log('-----');
 
 // access 2nd color of third phone
+
 console.log(smartphoneArray[2].colors[1]);
 
 console.log('-----');
 
 // replace the first color of 4th phone with 'Silver'
+
 smartphoneArray[3].colors[0]= 'Silver'
 console.log(smartphoneArray[3]);
 
 console.log('-----');
 
 //add a new color 'yellow' to 5th phone
+
 smartphoneArray[4].colors.push('Yellow')
 console.log(smartphoneArray[4]);
 
@@ -109,6 +112,7 @@ console.log(budgetPhones);
 console.log('-----');
 
 // display only brands
+
 const brands = smartphoneArray.map((phone) => { return phone.brand })
 console.log(brands);
 
@@ -125,5 +129,13 @@ console.log('-----');
 
 const samsungPhones = smartphoneArray.filter( (phone) => {return phone.brand.includes('Samsung') } )
 console.log(samsungPhones);
+
+console.log('-----');
+
+const keyword = 'Sam';
+const filteredPhones = smartphoneArray.filter((phone) => {
+    return phone.brand.toLowerCase().includes(keyword.toLowerCase())
+});
+console.log(filteredPhones);
 
 console.log('-----');
