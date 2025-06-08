@@ -64,3 +64,4 @@ while(n1>0){
 }
 
 console.log(n1, reverse);
+
