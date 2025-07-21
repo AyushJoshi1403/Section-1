@@ -6,25 +6,25 @@ for (let i = 0; i < nums.length; i++) {
 
 console.log('-----')
 
-for(let n of nums){
+for (let n of nums) {
     console.log(n);
 }
 
 console.log('-----')
 
-nums.forEach((a,b) => { console.log(a,b); });
+nums.forEach((a, b) => { console.log(a, b); });
 
 // WAP to print all even numbers from the array
 
 for (let i = 0; i < nums.length; i++) {
-    if (nums[i] %2 == 0)
-    console.log(nums[i]);
+    if (nums[i] % 2 == 0)
+        console.log(nums[i]);
 }
 
 //or
 
 nums.forEach((a) => {
-    if(a%2 === 0){
+    if (a % 2 === 0) {
         console.log(a);
     }
 });
@@ -35,9 +35,9 @@ console.log('-----')
 
 const odds = [];
 nums.forEach((a) => {
-    if(a % 2 !== 0){
+    if (a % 2 !== 0) {
         // console.log(a);
-        odds.push(a)     
+        odds.push(a)
     }
 });
 
@@ -50,7 +50,7 @@ console.log('-----')
 const square = [];
 nums.forEach((a) => {
     // (a ** 2)
-    square.push(a**2)
+    square.push(a ** 2)
 })
 
 console.log(square);
@@ -58,25 +58,25 @@ console.log(square);
 console.log('-----')
 
 // Map Functions
-const sqr = nums.map( (n) => { return n**2 } );
+const sqr = nums.map((n) => { return n ** 2 });
 console.log(sqr);
 
 console.log('-----')
 
-const names = [ 'raju', 'ramu', 'pinki', 'kaliya', 'chutki' ];
+const names = ['raju', 'ramu', 'pinki', 'kaliya', 'chutki'];
 
-console.log( 'sdsd'.toUpperCase() );
+console.log('sdsd'.toUpperCase());
 
-const upperNames = names.map( (n) => {return n.toUpperCase() } );
+const upperNames = names.map((n) => { return n.toUpperCase() });
 console.log(upperNames);
 
 console.log('-----')
 
-const prices = [ '$234.56', '$345.67', '$456.78', '$567.89', '$678.90' ];
+const prices = ['$234.56', '$345.67', '$456.78', '$567.89', '$678.90'];
 
 //WAP to convert all prices to integer
 
-const intPrices = prices.map( (p) => {return parseInt(p.slice(1)) } )
+const intPrices = prices.map((p) => { return parseInt(p.slice(1)) })
 console.log(intPrices);
 
 console.log('-----')
@@ -84,35 +84,35 @@ console.log('-----')
 // [ 234, 345, 456, 567, 678 ]
 // add 18% GST to all prices
 
-const prices2 =[2400,340,890,430,12000,340];
+const prices2 = [2400, 340, 890, 430, 12000, 340];
 
-const gstPrices = prices2.map( (p) => {return (p + p*0.18) } )
+const gstPrices = prices2.map((p) => { return (p + p * 0.18) })
 console.log(gstPrices);
 
 console.log('-----');
 
-const fullnames = [ 'Ayush Joshi', 'Ankit Singh', 'Shreyansh Saxena', 'Hamid Khan' ];
+const fullnames = ['Ayush Joshi', 'Ankit Singh', 'Shreyansh Saxena', 'Hamid Khan'];
 
-const firstNames = fullnames.map( (p) => {return p.split(' ')[0] } );
+const firstNames = fullnames.map((p) => { return p.split(' ')[0] });
 console.log(firstNames);
 
 console.log('-----')
 
 // filter
-const budgetPrices = prices2.filter( (p) => {return p<1000 } );
+const budgetPrices = prices2.filter((p) => { return p < 1000 });
 console.log(budgetPrices);
 
 console.log('-----')
 
 const nums2 = [3, 7, 9, 2, 1, 6, 8];
 // filter all odd numbers
-const oddNums = nums2.filter( (p) => {return ( p % 2 !== 0) });
+const oddNums = nums2.filter((p) => { return (p % 2 !== 0) });
 console.log(oddNums);
 
 console.log('-----')
 
 const friendNames = ['raju', 'ramu', 'pinki', 'kaliya', 'chutki'];
-const namesFour = friendNames.filter( (p) => {return (p.length > 4)});
+const namesFour = friendNames.filter((p) => { return (p.length > 4) });
 console.log(namesFour);
 
 console.log('-----')
