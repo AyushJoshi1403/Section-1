@@ -1,33 +1,33 @@
-const arr = ['hello' , 345 , true];
-console.log( typeof arr );
-console.log( Array.isArray(arr) );
+const arr = ['hello', 345, true];
+console.log(typeof arr);
+console.log(Array.isArray(arr));
 
 console.log('-----')
 
-const movies = [ 'Stree2', 'Salaar', 'Pathan', 'John Wick', 'Spiderman' ];
+const movies = ['Stree2', 'Salaar', 'Pathan', 'John Wick', 'Spiderman'];
 
-console.log( movies.length ); //also works for strings
+console.log(movies.length); //also works for strings
 
 console.log('-----')
 
 // indexing
-console.log( movies[2] ); //also works for strings
-console.log( movies.indexOf('Spiderman') ); //also works for strings
+console.log(movies[2]); //also works for strings
+console.log(movies.indexOf('Spiderman')); //also works for strings
 
-console.log( movies[-2] );
-console.log( movies.at(-2) ); //also works for strings
+console.log(movies[-2]);
+console.log(movies.at(-2)); //also works for strings
 
 console.log('-----')
 
 movies[2] = 'James Bond';
 
-console.log( movies );
+console.log(movies);
 
 console.log('-----')
 
 // slicing
 
-console.log(movies.slice(1,4)); //also works for strings
+console.log(movies.slice(1, 4)); //also works for strings
 console.log(movies.slice(2));
 console.log(movies.slice(-3));
 
