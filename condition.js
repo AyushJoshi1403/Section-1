@@ -1,13 +1,13 @@
 n = 34;
 
-if(n%2 === 0){
+if (n % 2 === 0) {
 
     message = 'good';
     var message2 = 'nice';
     let message3 = 'cool';
 
     console.log('even');
-}else{
+} else {
     console.log('odd');
 }
 
@@ -19,8 +19,8 @@ console.log(message2);
 
 const m = 344;
 
-if (m % 7 === 0 && m % 11 === 0){
+if (m % 7 === 0 && m % 11 === 0) {
     console.log('Divisible by both 7 and 11');
-}else{
+} else {
     console.log('Not divisible by both 7 and 11');
 }
