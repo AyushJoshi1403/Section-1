@@ -54,38 +54,38 @@ if (n6 % 3 === 0 && n6 % 5 === 0) {
 // wap to check if a number is divisible by 7 or 11
 // ||
 const n7 = 77;
-if(n7 % 7 === 0 || n7 % 11 === 0){
+if (n7 % 7 === 0 || n7 % 11 === 0) {
     console.log('divisible by 7 or 11');
-}else{
+} else {
     console.log('not divisible by 7 or 11');
 }
 
 // wap to check if a number is perfect square
 
-console.log( 25 ** 0.5 );
-console.log( Number.isInteger(7) );
+console.log(25 ** 0.5);
+console.log(Number.isInteger(7));
 
 const num = 36;
 const sqrt = num ** 0.5;
 
 console.log(sqrt);
-if(Number.isInteger(sqrt)){
+if (Number.isInteger(sqrt)) {
     console.log('perfect square');
-}else{
+} else {
     console.log('not perfect square');
 }
 
 // loop
 
-for(let i=1; i<=1000; i++){
+for (let i = 1; i <= 1000; i++) {
     console.log(i);
 }
 
 // WAP to print all numbers divisible by 7 between 50 to 200
 
-for(let i=50; i<=200; i++){
-    
-    if(i % 7 === 0){
+for (let i = 50; i <= 200; i++) {
+
+    if (i % 7 === 0) {
         console.log(i);
     }
 
